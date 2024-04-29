@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor01:#333;
+    
+    --texto01:#fff;
+    --texto02:#ffffff88;
+    --texto03:#ff0000;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.main{
+    width:  100vw;
+    height: 100vh;
+    background-image: url(../img/undefined_image.png);
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+}
+nav{
+    color: var(--texto02);
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+}
+.logo{
+    align-items: center;
+    justify-content: center;
+}
+.logo h2{
+    margin: 10px 15px;
+    width: 180px;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    margin: 10px 52%;
+}
+.menu li {
+    margin-left: 23px;
+    letter-spacing: 2px;
+}
+.menu li:hover{
+    color: var(--texto01);
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+/*about*/
+.about h4{
+    color: var(--texto01);
+}
+.about h6{
+    margin: 4px;
+    color: var(--texto03);
+}
+.about{
+    width: 100vw;
+    height: 40vh;
+    background: var(--cor01);
+    display: flex;
+    flex-direction: column;
+
+}
+.linha{
+    width: 150px;
+    display: flex;
+    margin: 20px auto;
+    justify-content: space-around;
+}
+
+.linha2 {
+    width: 700px;
+    text-align: center;
+    margin: 15px auto;
+    color: var(--texto02);
+}
+
+/*contact*/
+.contact{
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--cor01);
+}
+
+.cttslegend{
+    color: var(--texto01);
+    text-align: center;
+    width: 700px;
+    height: 135px;
+    position: absolute;
+    margin-top: -160px;
+    justify-content: space-around;
+}
+
+.cards-box{
+    position: absolute;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    color: var(--texto01);
+}
+.contatos{
+    border: #fff SOLID 1PX;
+    width: 300px;
+    height: 200px;
+    margin-left: 23px;
+}
+
+.ctts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+.ctts li a{
+    color: var(--texto02);
+    text-decoration: none;
+}
+
+.ctts li a:hover{
+    color: var(--texto01);
+}
